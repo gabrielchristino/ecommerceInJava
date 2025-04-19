@@ -51,4 +51,8 @@ public class Order {
     public List<OrderedItem> getItems() {
         return items;
     }
+
+    public double shippingCost(ShippingService shippingService) {
+        return shippingService.calculateShippingCost(this);
+    }
 }

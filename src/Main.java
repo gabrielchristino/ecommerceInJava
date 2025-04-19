@@ -129,6 +129,7 @@ public class Main {
                         for (OrderedItem item : order.getItems()) {
                             System.out.println("- " + item.getProduct().getName() + ": " + item.getQuantity());
                         }
+                        System.out.println("Shipping Cost: " + order.shippingCost(new DummyShippingService()));
                     }
                     break;
                 case 6:
